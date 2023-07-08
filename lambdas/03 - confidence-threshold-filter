@@ -1,0 +1,22 @@
+import json
+
+THRESHOLD = 0.7
+
+def lambda_handler(event, context):
+    # Get the inferences from the event
+    inferences = event['body']['inferences']
+    
+    # Check if inference for any class is above THRESHOLD
+    meets_threshold = max(inferences) >= THRESHOLD
+    
+    # If our threshold is met, pass our data
+    # Otherwise, end the Step Function with an error
+    if meets_threshold:
+        pass
+    else:
+        raise ValueError("THRESHOLD_CONFIDENCE_NOT_MET")
+
+    return {
+        'statusCode': 200,
+        'body': event["body"]
+    }
