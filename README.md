@@ -24,6 +24,7 @@ The SageMaker Model Monitor is used to observe the Endpoint<br>
 so we can visualize and evaluate the inferences.<br><br>
 
 **Model Confidence for recent Inferences**
+
 ![Model Confidence for recent Inferences](assets/Confidence_Threshold_Recent_Inferences.png "Model Confidence for recent Inferences")
 
 **Visual Inspection of recent Inferences**
