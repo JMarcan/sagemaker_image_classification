@@ -1,6 +1,6 @@
 import json
 
-THRESHOLD = 0.7
+THRESHOLD = 0.9
 
 def lambda_handler(event, context):
     # Get the inferences from the event
